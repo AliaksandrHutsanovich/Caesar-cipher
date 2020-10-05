@@ -2,10 +2,10 @@
 
 CLI tool should accept 4 options (short alias and full name):
 
-1.  **-s, --shift**: a shift
+1.  **-s, --shift**: a shift  (number, required)
 2.  **-i, --input**: an input file
 3.  **-o, --output**: an output file
-4.  **-a, --action**: an action encode/decode
+4.  **-a, --action**: an action encode/decode (required, required values)
 
 **Usage example:**
 
