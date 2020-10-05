@@ -22,7 +22,7 @@ const readFile = (path, pathToWrite, callbackToWrite) => {
 
 const writeFile = (path, data) => {
 
-  const writable = fs.createWriteStream(path);
+  const writable = fs.createWriteStream(path, { flags: 'a' });
   const formattedData = cesarCipher(data, num, actionType);
   writable.write(formattedData);
   writable.end();
